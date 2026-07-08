@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colecciones | Laboratorio de Petrología | FI UNAM</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <div class="container d-flex justify-content-between">
+
+            <span>Universidad Nacional Autónoma de México</span>
+
+            <span>Facultad de Ingeniería</span>
+
+        </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+
+                Laboratorio de Petrología
+
+            </a>
+
+            <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="laboratorio.html">Laboratorio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="colecciones.html">Colecciones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipo.html">Equipo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="investigacion.html">Investigación</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+        <div class="container">
+
+            <h1>Colecciones</h1>
+
+            <p>
+
+                Material petrográfico, litológico y didáctico disponible
+                para consulta académica.
+
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- BUSCADOR -->
+
+    <section class="py-5">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <div class="input-group input-group-lg">
+
+                        <span class="input-group-text">
+
+                            <i class="bi bi-search"></i>
+
+                        </span>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            class="form-control"
+                            placeholder="Buscar colección...">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TARJETAS -->
+
+    <section class="pb-5">
+
+        <div class="container">
+
+            <div class="row g-4" id="collectionGrid">
+
+                <!-- Ígneas -->
+
+                <div class="col-lg-4 col-md-6 collection-item">
+
+                    <div class="card feature-card h-100">
+
+                        <img
+                            src="assets/img/igneas.jpg"
+                            class="card-img-top"
+                            alt="Ígneas">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-primary mb-3">
+
+                                Rocas
+
+                            </span>
+
+                            <h4>
+
+                                Rocas Ígneas
+
+                            </h4>
+
+                            <p>
+
+                                Colección de rocas plutónicas,
+                                volcánicas e hipabisales.
+
+                            </p>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline-primary">
+
+                                Ver colección
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Sedimentarias -->
+
+                <div class="col-lg-4 col-md-6 collection-item">
+
+                    <div class="card feature-card h-100">
+
+                        <img
+                            src="assets/img/sedimentarias.jpg"
+                            class="card-img-top"
+                            alt="Sedimentarias">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-success mb-3">
+
+                                Rocas
+
+                            </span>
+
+                            <h4>
+
+                                Rocas Sedimentarias
+
+                            </h4>
+
+                            <p>
+
+                                Areniscas, calizas,
+                                conglomerados y lutitas.
+
+                            </p>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline-primary">
+
+                                Ver colección
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Metamórficas -->
+
+                <div class="col-lg-4 col-md-6 collection-item">
+
+                    <div class="card feature-card h-100">
+
+                        <img
+                            src="assets/img/metamorficas.jpg"
+                            class="card-img-top"
+                            alt="Metamórficas">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-danger mb-3">
+
+                                Rocas
+
+                            </span>
+
+                            <h4>
+
+                                Rocas Metamórficas
+
+                            </h4>
+
+                            <p>
+
+                                Esquistos, gneises,
+                                mármoles y cuarcitas.
+
+                            </p>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline-primary">
+
+                                Ver colección
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Minerales -->
+
+                <div class="col-lg-4 col-md-6 collection-item">
+
+                    <div class="card feature-card h-100">
+
+                        <img
+                            src="assets/img/minerales.jpg"
+                            class="card-img-top"
+                            alt="Minerales">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-warning text-dark mb-3">
+
+                                Minerales
+
+                            </span>
+
+                            <h4>
+
+                                Minerales
+
+                            </h4>
+
+                            <p>
+
+                                Muestras cristalinas y
+                                minerales formadores de roca.
+
+                            </p>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline-primary">
+
+                                Ver colección
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Secciones -->
+
+                <div class="col-lg-4 col-md-6 collection-item">
+
+                    <div class="card feature-card h-100">
+
+                        <img
+                            src="assets/img/laminas.jpg"
+                            class="card-img-top"
+                            alt="Láminas">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-info mb-3">
+
+                                Microscopía
+
+                            </span>
+
+                            <h4>
+
+                                Secciones Delgadas
+
+                            </h4>
+
+                            <p>
+
+                                Láminas petrográficas
+                                para análisis microscópico.
+
+                            </p>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline-primary">
+
+                                Ver colección
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Colección Histórica -->
+
+                <div class="col-lg-4 col-md-6 collection-item">
+
+                    <div class="card feature-card h-100">
+
+                        <img
+                            src="assets/img/historica.jpg"
+                            class="card-img-top"
+                            alt="Histórica">
+
+                        <div class="card-body">
+
+                            <span class="badge bg-secondary mb-3">
+
+                                Patrimonio
+
+                            </span>
+
+                            <h4>
+
+                                Colección Histórica
+
+                            </h4>
+
+                            <p>
+
+                                Muestras de valor histórico
+                                pertenecientes al laboratorio.
+
+                            </p>
+
+                            <a
+                                href="#"
+                                class="btn btn-outline-primary">
+
+                                Ver colección
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    Laboratorio de Petrología
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    Facultad de Ingeniería · UNAM
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+        const searchInput = document.getElementById("searchInput");
+
+        const cards = document.querySelectorAll(".collection-item");
+
+        searchInput.addEventListener("keyup", function(){
+
+            let value = this.value.toLowerCase();
+
+            cards.forEach(card=>{
+
+                let text = card.innerText.toLowerCase();
+
+                card.style.display = text.includes(value)
+                    ? ""
+                    : "none";
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
