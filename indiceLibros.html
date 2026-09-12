@@ -34,7 +34,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top shadow">
         <div class="container">
-
+            
             <a>
                 <img class="logopetro" src="assets/img/logo.png" alt="logo lab petrologia">
             </a>
@@ -57,7 +57,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
@@ -68,17 +68,56 @@
                         <a class="nav-link" href="colecciones.html">Colecciones</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipo.html">Equipo</a>
-                    </li>
+                    <li class="nav-item dropdown">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="investigacion.html">Investigación</a>
-                    </li>
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="papimeDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+        Proyecto PAPIME
+
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="papimeDropdown">
+
+        <li>
+            <a class="dropdown-item"
+               href="https://papimeingenieria.wixsite.com/rocas-sedimentarias"
+               target="_blank">
+                Sedimentos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://metamorficapapime.wixsite.com/rocasmetamorficas"
+               target="_blank">
+                Complejos Metamórficos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://www.ingenieria.unam.mx/geologia3D/"
+               target="_blank">
+                Geología 3D
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://ingenieria-unam.netlify.app/#recorrido_virtual"
+               target="_blank">
+                Excursiones Mineralógicas
+            </a>
+        </li>
+
+    </ul>
+
+</li>
 
                 </ul>
 
@@ -87,7 +126,7 @@
         </div>
     </nav>
 
-    <!-- HEADER -->
+    <!-- HEADER 
 
     <header class="page-header">
 
@@ -95,20 +134,19 @@
 
             <h1>
 
-                Software
+                Enlaces
 
             </h1>
 
             <p>
 
-                Programas y herramientas de cómputo recomendados para
-                el estudio de las Ciencias de la Tierra.
+                Enlaces de la Universidad, Geología, Geociencias, Geofísica, Institutos, etc.
 
             </p>
 
         </div>
 
-    </header>
+    </header> -->
 
     <!-- HERRAMIENTAS -->
 
@@ -120,133 +158,62 @@
 
                 <h2 class="section-title">
 
-                    Herramientas Recomendadas
+                    Índice de Libros
 
                 </h2>
 
-                <p class="text-muted">
-
-                    Conoce los programas de cómputo que pueden facilitar
-                    tus proyectos y prácticas académicas.
-
-                </p>
 
             </div>
 
             <div class="row g-4">
 
-                <!-- Google Earth -->
 
-                <div class="col-lg-4 col-md-6">
-
-                    <div class="card feature-card h-100">
-
-                        <div class="card-body">
-
-                            <i class="bi bi-globe2 icon"></i>
-
-                            <h4>
-
-                                Google Earth
-
-                            </h4>
-
-                            <p>
-
-                                Permite volar a cualquier lugar de la Tierra y explorar
-                                imágenes de satélite, mapas, relieve y edificios en 3D.
-                                También ofrece contenido geográfico que puede guardarse
-                                y compartirse.
-
-                            </p>
-
-                            <a href="https://earth.google.com/"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn btn-outline-primary">
-
-                                Visitar sitio
-
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- EQuake3D -->
-
-                <div class="col-lg-4 col-md-6">
+                    <!-- class="col-lg-6" -->
+                <div >
 
                     <div class="card feature-card h-100">
 
                         <div class="card-body">
 
-                            <i class="bi bi-activity icon"></i>
+                            <span class="badge bg-primary mb-3">
 
-                            <h4>
+                                Petrología
 
-                                EQuake3D
+                            </span>
 
-                            </h4>
+                            <ul class="list-group list-group-flush">
 
-                            <p>
+                                <li class="list-group-item"> <a href="#" target="_blank"
+                                rel="noopener">Petrografía básica. Castro Dorado, A. (1989).Texturas, clasificación y nomenclatura de rocas.</a></li>
 
-                                Visualiza sismos y terremotos ocurridos en el planeta y
-                                los grafica en un mapa 3D. Permite filtrar por magnitud
-                                y fecha, con datos conectados a la base de la USGS.
+                            </ul>
 
-                            </p>
+                            <span class="badge bg-primary mb-3">
 
-                            <a href="https://www.wolton.net/quake.html#free"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn btn-outline-primary">
+                                Mineralogía
 
-                                Visitar sitio
+                            </span>
 
-                            </a>
+                            <ul class="list-group list-group-flush">
 
-                        </div>
+                                <li class="list-group-item"> <a href="https://books.google.com.mx/books?id=4z8EMkxqfe4C&lpg=PP1&ots=lVHxflZPsx&dq=manual%20de%20mineralog%C3%ADa%20klein&pg=PP1&output=embed" target="_blank"
+                                rel="noopener">Manual de Mineralogía Cornelis Klein, Cornelius S. Hurlbut - 1998 - Science - 392 páginas</a></li>
 
-                    </div>
+                            </ul>
 
-                </div>
+                            <span class="badge bg-primary mb-3">
 
-                <!-- One Geology -->
+                                Estratigrafía
 
-                <div class="col-lg-4 col-md-6">
+                            </span>
 
-                    <div class="card feature-card h-100">
+                            <ul class="list-group list-group-flush">
 
-                        <div class="card-body">
+                                <li class="list-group-item"> <a href="https://books.google.com.mx/books?id=U0UM6XC38K0C&lpg=PA118&ots=Ehji3PKpiu&dq=guia%20estratigrafica%20internacional&pg=PA118&output=embed" target="_blank"
+                                rel="noopener">Guía Estratigráfica Internacional: guía para la clasificación, terminología ... Escrito por Hollis Dow Hedberg</a></li>
 
-                            <i class="bi bi-map icon"></i>
+                            </ul>
 
-                            <h4>
-
-                                One Geology
-
-                            </h4>
-
-                            <p>
-
-                                Proyecto que utiliza imágenes del navegador World Wind
-                                de la NASA para construir un mapa geológico mundial,
-                                con capas activables y una vista general de la geología
-                                de distintos países.
-
-                            </p>
-
-                            <a href="http://www.onegeology.org"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn btn-outline-primary">
-
-                                Visitar sitio
-
-                            </a>
 
                         </div>
 

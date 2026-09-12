@@ -26,128 +26,108 @@
 
 <body>
 
-    <!-- TOPBAR -->
-
+     <!-- Barra superior -->
     <div class="topbar">
-
-        <div class="container d-flex justify-content-between">
-
-            <span>
-
-                Universidad Nacional Autónoma de México
-
-            </span>
-
-            <span>
-
-                Facultad de Ingeniería
-
-            </span>
-
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><img class="logounam" src="assets/img/unam.png"></span>
+            <span>Universidad Nacional Autónoma de México</span>
+            <span>Facultad de Ingeniería</span>
         </div>
-
     </div>
 
-    <!-- NAVBAR -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top">
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top shadow">
         <div class="container">
+            
+            <a>
+                <img class="logopetro" src="assets/img/logo.png" alt="logo lab petrologia">
+            </a>
 
-            <a class="navbar-brand fw-bold"
-                href="index.html">
-
+            <a class="navbar-brand fw-bold" href="index.html">
                 Laboratorio de Petrología
-
             </a>
 
             <button class="navbar-toggler"
-
+                type="button"
                 data-bs-toggle="collapse"
-
                 data-bs-target="#navbar">
 
                 <span class="navbar-toggler-icon"></span>
 
             </button>
 
-            <div class="collapse navbar-collapse"
-                id="navbar">
+            <div class="collapse navbar-collapse" id="navbar">
 
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                            href="index.html">
-
-                            Inicio
-
-                        </a>
-
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                            href="laboratorio.html">
-
-                            Laboratorio
-
-                        </a>
-
+                        <a class="nav-link" href="laboratorio.html">Laboratorio</a>
                     </li>
 
                     <li class="nav-item">
-
-                        <a class="nav-link"
-                            href="colecciones.html">
-
-                            Colecciones
-
-                        </a>
-
+                        <a class="nav-link" href="colecciones.html">Colecciones</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item dropdown">
 
-                        <a class="nav-link"
-                            href="equipo.html">
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="papimeDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-                            Equipo
+        Proyecto PAPIME
 
-                        </a>
+    </a>
 
-                    </li>
+    <ul class="dropdown-menu" aria-labelledby="papimeDropdown">
 
-                    <li class="nav-item">
+        <li>
+            <a class="dropdown-item"
+               href="https://papimeingenieria.wixsite.com/rocas-sedimentarias"
+               target="_blank">
+                Sedimentos
+            </a>
+        </li>
 
-                        <a class="nav-link"
-                            href="investigacion.html">
+        <li>
+            <a class="dropdown-item"
+               href="https://metamorficapapime.wixsite.com/rocasmetamorficas"
+               target="_blank">
+                Complejos Metamórficos
+            </a>
+        </li>
 
-                            Investigación
+        <li>
+            <a class="dropdown-item"
+               href="https://www.ingenieria.unam.mx/geologia3D/"
+               target="_blank">
+                Geología 3D
+            </a>
+        </li>
 
-                        </a>
+        <li>
+            <a class="dropdown-item"
+               href="https://ingenieria-unam.netlify.app/#recorrido_virtual"
+               target="_blank">
+                Excursiones Mineralógicas
+            </a>
+        </li>
 
-                    </li>
+    </ul>
 
-                    <li class="nav-item">
-
-                        <a class="nav-link active"
-                            href="contacto.html">
-
-                            Contacto
-
-                        </a>
-
-                    </li>
+</li>
 
                 </ul>
 
             </div>
 
         </div>
-
     </nav>
 
     <!-- HEADER -->

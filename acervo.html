@@ -34,7 +34,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top shadow">
         <div class="container">
-
+            
             <a>
                 <img class="logopetro" src="assets/img/logo.png" alt="logo lab petrologia">
             </a>
@@ -57,7 +57,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
@@ -68,17 +68,56 @@
                         <a class="nav-link" href="colecciones.html">Colecciones</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipo.html">Equipo</a>
-                    </li>
+                    <li class="nav-item dropdown">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="investigacion.html">Investigación</a>
-                    </li>
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="papimeDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+        Proyecto PAPIME
+
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="papimeDropdown">
+
+        <li>
+            <a class="dropdown-item"
+               href="https://papimeingenieria.wixsite.com/rocas-sedimentarias"
+               target="_blank">
+                Sedimentos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://metamorficapapime.wixsite.com/rocasmetamorficas"
+               target="_blank">
+                Complejos Metamórficos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://www.ingenieria.unam.mx/geologia3D/"
+               target="_blank">
+                Geología 3D
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://ingenieria-unam.netlify.app/#recorrido_virtual"
+               target="_blank">
+                Excursiones Mineralógicas
+            </a>
+        </li>
+
+    </ul>
+
+</li>
 
                 </ul>
 
@@ -87,32 +126,9 @@
         </div>
     </nav>
 
-    <!-- HEADER -->
+    <!-- ÁREAS -->
 
-    <header class="page-header">
-
-        <div class="container">
-
-            <h1>
-
-                Software
-
-            </h1>
-
-            <p>
-
-                Programas y herramientas de cómputo recomendados para
-                el estudio de las Ciencias de la Tierra.
-
-            </p>
-
-        </div>
-
-    </header>
-
-    <!-- HERRAMIENTAS -->
-
-    <section class="py-5">
+    <section class="bg-light py-5" id="colecciones">
 
         <div class="container">
 
@@ -120,52 +136,32 @@
 
                 <h2 class="section-title">
 
-                    Herramientas Recomendadas
+                    Acervo digital
 
                 </h2>
-
-                <p class="text-muted">
-
-                    Conoce los programas de cómputo que pueden facilitar
-                    tus proyectos y prácticas académicas.
-
-                </p>
 
             </div>
 
             <div class="row g-4">
 
-                <!-- Google Earth -->
-
-                <div class="col-lg-4 col-md-6">
+                <div class="col-md-4">
 
                     <div class="card feature-card h-100">
 
+                        <img src="assets/img/libros.png"
+                            class="card-img-top"
+                            alt="Acervo digital">
+
                         <div class="card-body">
 
-                            <i class="bi bi-globe2 icon"></i>
 
-                            <h4>
+                            <h4>Libros</h4>
 
-                                Google Earth
 
-                            </h4>
-
-                            <p>
-
-                                Permite volar a cualquier lugar de la Tierra y explorar
-                                imágenes de satélite, mapas, relieve y edificios en 3D.
-                                También ofrece contenido geográfico que puede guardarse
-                                y compartirse.
-
-                            </p>
-
-                            <a href="https://earth.google.com/"
-                                target="_blank"
-                                rel="noopener"
+                            <a href="indiceLibros.html"
                                 class="btn btn-outline-primary">
 
-                                Visitar sitio
+                                Explorar
 
                             </a>
 
@@ -175,36 +171,26 @@
 
                 </div>
 
-                <!-- EQuake3D -->
-
-                <div class="col-lg-4 col-md-6">
+                <div class="col-md-4">
 
                     <div class="card feature-card h-100">
 
+                        <img src="assets/img/revistas.png"
+                            class="card-img-top"
+                            alt="Equipo">
+
                         <div class="card-body">
 
-                            <i class="bi bi-activity icon"></i>
+        
 
-                            <h4>
+                            <h4>Revistas</h4>
 
-                                EQuake3D
 
-                            </h4>
 
-                            <p>
-
-                                Visualiza sismos y terremotos ocurridos en el planeta y
-                                los grafica en un mapa 3D. Permite filtrar por magnitud
-                                y fecha, con datos conectados a la base de la USGS.
-
-                            </p>
-
-                            <a href="https://www.wolton.net/quake.html#free"
-                                target="_blank"
-                                rel="noopener"
+                            <a href="#"
                                 class="btn btn-outline-primary">
 
-                                Visitar sitio
+                                Explorar
 
                             </a>
 
@@ -214,37 +200,22 @@
 
                 </div>
 
-                <!-- One Geology -->
-
-                <div class="col-lg-4 col-md-6">
+                <div class="col-md-4">
 
                     <div class="card feature-card h-100">
 
+                        <img src="assets/img/multi.jpg"
+                            class="card-img-top"
+                            alt="Recursos">
+
                         <div class="card-body">
 
-                            <i class="bi bi-map icon"></i>
+                            <h4>Multimedia</h4>
 
-                            <h4>
-
-                                One Geology
-
-                            </h4>
-
-                            <p>
-
-                                Proyecto que utiliza imágenes del navegador World Wind
-                                de la NASA para construir un mapa geológico mundial,
-                                con capas activables y una vista general de la geología
-                                de distintos países.
-
-                            </p>
-
-                            <a href="http://www.onegeology.org"
-                                target="_blank"
-                                rel="noopener"
+                            <a href="indiceMultimedia.html"
                                 class="btn btn-outline-primary">
 
-                                Visitar sitio
+                                Explorar
 
                             </a>
 
@@ -259,8 +230,6 @@
         </div>
 
     </section>
-
-    <!-- FOOTER -->
 
     <footer>
 
@@ -341,11 +310,6 @@
         </div>
 
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/main.js"></script>
-
 </body>
-
-</html>

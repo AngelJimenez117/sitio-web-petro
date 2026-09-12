@@ -4,6 +4,7 @@
     --unam-gold:#B38E32;
     --background:#F8F9FA;
     --text:#222;
+    --unam-red:#CD171E;
 
 }
 
@@ -25,16 +26,24 @@ body{
 
 .topbar{
 
-    background:#002147;
-    color:white;
+    background:var(--background);
+    color:black;
     font-size:.85rem;
     padding:8px 0;
 
 }
 
+.logopetro{
+    width:50px; height:50px; margin-right: 20px;
+}
+
+.logounam{
+    width:50px; height:50px;
+}
+
 .navbar-unam{
 
-    background:var(--unam-blue);
+    background:var(--unam-red);
 
 }
 
@@ -58,18 +67,31 @@ body{
 
 .hero{
 
-    background:
-        linear-gradient(rgba(0,0,0,.55),
-        rgba(0,0,0,.55)),
-        url("../img/hero.jpg");
+    background-image: url("../img/Header5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    background-size:cover;
-    background-position:center;
+    min-height: 500px;
 
-    min-height:500px;
+    display: flex;
+    align-items: center;
 
-    display:flex;
-    align-items:center;
+    color:white;
+
+}
+
+.heroAgradecimientos{
+
+    background-image: url("../img/Header2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
 
     color:white;
 
@@ -669,7 +691,7 @@ textarea{
 
 footer{
 
-    background:#002147;
+    background:var(--unam-red);
 
     color:white;
 

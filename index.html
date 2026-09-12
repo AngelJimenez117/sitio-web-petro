@@ -33,6 +33,7 @@
     <!-- Barra superior -->
     <div class="topbar">
         <div class="container d-flex justify-content-between align-items-center">
+            <span><img class="logounam" src="assets/img/unam.png"></span>
             <span>Universidad Nacional Autónoma de México</span>
             <span>Facultad de Ingeniería</span>
         </div>
@@ -41,8 +42,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top shadow">
         <div class="container">
+            
+            <a>
+                <img class="logopetro" src="assets/img/logo.png" alt="logo lab petrologia">
+            </a>
 
-            <a class="navbar-brand fw-bold" href="#">
+            <a class="navbar-brand fw-bold" href="index.html">
                 Laboratorio de Petrología
             </a>
 
@@ -60,28 +65,67 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Laboratorio</a>
+                        <a class="nav-link" href="laboratorio.html">Laboratorio</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Colecciones</a>
+                        <a class="nav-link" href="colecciones.html">Colecciones</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Equipo</a>
-                    </li>
+                    <li class="nav-item dropdown">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Investigación</a>
-                    </li>
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="papimeDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
+        Proyecto PAPIME
+
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="papimeDropdown">
+
+        <li>
+            <a class="dropdown-item"
+               href="https://papimeingenieria.wixsite.com/rocas-sedimentarias"
+               target="_blank">
+                Sedimentos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://metamorficapapime.wixsite.com/rocasmetamorficas"
+               target="_blank">
+                Complejos Metamórficos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://www.ingenieria.unam.mx/geologia3D/"
+               target="_blank">
+                Geología 3D
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://ingenieria-unam.netlify.app/#recorrido_virtual"
+               target="_blank">
+                Excursiones Mineralógicas
+            </a>
+        </li>
+
+    </ul>
+
+</li>
 
                 </ul>
 
@@ -154,7 +198,7 @@
 
                 <div class="col-lg-6">
 
-                    <img src="assets/img/laboratorio.jpg"
+                    <img src="assets/img/contact.jpg"
                         class="img-fluid rounded shadow"
                         alt="Laboratorio">
 
@@ -170,26 +214,26 @@
 
                     <p>
 
-                        El Laboratorio de Petrología de la Facultad de Ingeniería
-                        ofrece apoyo a la docencia e investigación mediante el
-                        estudio de rocas, minerales y secciones delgadas.
+                        El objetivo de la presente página es proporcionar información del catálogo litológico de la facultad así como una referencia para los alumnos que, 
+                        de acuerdo al plan de estudios de la materia y dentro de su objetivo permita contribuir al aprendizaje de una manera dinámica y pedagógica.
 
                     </p>
 
                     <p>
 
-                        Sus instalaciones cuentan con colecciones didácticas,
-                        microscopios petrográficos y equipo especializado para
-                        análisis macroscópico y microscópico.
+                        Es importante mencionar que el contenido solo es un complemento a la información brindada en las clases.    
+                        Así mismo esta página puede ser de utilidad a los académicos y profesionales al contar con un acervo digital, software y enlaces que puedan requerir en su vida profesional
 
                     </p>
-
-                    <a href="#"
+                    
+                    
+                    <a href="acercaDe.html"
                         class="btn btn-primary mt-3">
 
-                        Saber más
+                        Acerca de
 
                     </a>
+                    
 
                 </div>
 
@@ -227,27 +271,27 @@
 
                     <div class="card feature-card h-100">
 
-                        <img src="assets/img/rocas.jpg"
+                        <img src="assets/img/manual.jpg"
                             class="card-img-top"
-                            alt="Colecciones">
+                            alt="Acervo digital">
 
                         <div class="card-body">
 
-                            <i class="bi bi-gem icon"></i>
+                            <i class="bi bi-journal-richtext icon"></i>
 
-                            <h4>Colecciones</h4>
+                            <h4>Acervo digital</h4>
 
                             <p>
 
-                                Consulta el catálogo de muestras
-                                petrográficas y litológicas.
+                                Manuales, software,
+                                publicaciones y material multimedia.
 
                             </p>
 
-                            <a href="#"
+                            <a href="acervo.html"
                                 class="btn btn-outline-primary">
 
-                                Ver colección
+                                Explorar
 
                             </a>
 
@@ -261,27 +305,26 @@
 
                     <div class="card feature-card h-100">
 
-                        <img src="assets/img/equipo.jpg"
+                        <img src="assets/img/enlaces.jpg"
                             class="card-img-top"
                             alt="Equipo">
 
                         <div class="card-body">
 
-                            <i class="bi bi-microscope icon"></i>
+                            <i class="bi bi-search icon"></i>
 
-                            <h4>Equipo</h4>
+                            <h4>Enlaces</h4>
 
                             <p>
 
-                                Microscopios petrográficos,
-                                lupas y equipo de laboratorio.
+                                Enlaces de la Universidad, Geología, Geociencias, Geofísica, Institutos, etc.
 
                             </p>
 
-                            <a href="#"
+                            <a href="enlaces.html"
                                 class="btn btn-outline-primary">
 
-                                Ver equipo
+                                Ver enlaces
 
                             </a>
 
@@ -301,18 +344,17 @@
 
                         <div class="card-body">
 
-                            <i class="bi bi-journal-richtext icon"></i>
+                            <i class="bi bi-gem icon" ></i>
 
-                            <h4>Recursos</h4>
+                            <h4>Software</h4>
 
                             <p>
 
-                                Manuales, software,
-                                publicaciones y material multimedia.
+                               Conoce los programas de cómputo que pueden facilitar sus proyectos. 
 
                             </p>
 
-                            <a href="#"
+                            <a href="software.html"
                                 class="btn btn-outline-primary">
 
                                 Explorar
@@ -451,7 +493,7 @@
 
             <div class="text-center">
 
-                © 2026 Laboratorio de Petrología · Facultad de Ingeniería · UNAM
+                Copyright © Facultad de Ingeniería UNAM 2026. Derechos Reservados.
 
             </div>
 

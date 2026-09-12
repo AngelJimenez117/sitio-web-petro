@@ -15,113 +15,126 @@
 
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    <style>
+
+        /* Reserva espacio para las imágenes de equipo mientras se agregan */
+        .table td img{
+            min-width: 90px;
+            min-height: 70px;
+            max-width: 140px;
+            object-fit: cover;
+            background: #eef1f4;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<div class="topbar">
-
-    <div class="container d-flex justify-content-between">
-
-        <span>Universidad Nacional Autónoma de México</span>
-
-        <span>Facultad de Ingeniería</span>
-
+<!-- Barra superior -->
+    <div class="topbar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><img class="logounam" src="assets/img/unam.png"></span>
+            <span>Universidad Nacional Autónoma de México</span>
+            <span>Facultad de Ingeniería</span>
+        </div>
     </div>
 
-</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top shadow">
+        <div class="container">
+            
+            <a>
+                <img class="logopetro" src="assets/img/logo.png" alt="logo lab petrologia">
+            </a>
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top">
+            <a class="navbar-brand fw-bold" href="index.html">
+                Laboratorio de Petrología
+            </a>
 
-    <div class="container">
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
 
-        <a class="navbar-brand fw-bold" href="index.html">
+                <span class="navbar-toggler-icon"></span>
 
-            Laboratorio de Petrología
+            </button>
 
-        </a>
+            <div class="collapse navbar-collapse" id="navbar">
 
-        <button class="navbar-toggler"
+                <ul class="navbar-nav ms-auto">
 
-            data-bs-toggle="collapse"
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
 
-            data-bs-target="#menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="laboratorio.html">Laboratorio</a>
+                    </li>
 
-            <span class="navbar-toggler-icon"></span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="colecciones.html">Colecciones</a>
+                    </li>
 
-        </button>
+                    <li class="nav-item dropdown">
 
-        <div class="collapse navbar-collapse" id="menu">
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="papimeDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-            <ul class="navbar-nav ms-auto">
+        Proyecto PAPIME
 
-                <li class="nav-item">
+    </a>
 
-                    <a class="nav-link" href="index.html">
+    <ul class="dropdown-menu" aria-labelledby="papimeDropdown">
 
-                        Inicio
+        <li>
+            <a class="dropdown-item"
+               href="https://papimeingenieria.wixsite.com/rocas-sedimentarias"
+               target="_blank">
+                Sedimentos
+            </a>
+        </li>
 
-                    </a>
+        <li>
+            <a class="dropdown-item"
+               href="https://metamorficapapime.wixsite.com/rocasmetamorficas"
+               target="_blank">
+                Complejos Metamórficos
+            </a>
+        </li>
 
-                </li>
+        <li>
+            <a class="dropdown-item"
+               href="https://www.ingenieria.unam.mx/geologia3D/"
+               target="_blank">
+                Geología 3D
+            </a>
+        </li>
 
-                <li class="nav-item">
+        <li>
+            <a class="dropdown-item"
+               href="https://ingenieria-unam.netlify.app/#recorrido_virtual"
+               target="_blank">
+                Excursiones Mineralógicas
+            </a>
+        </li>
 
-                    <a class="nav-link active" href="laboratorio.html">
+    </ul>
 
-                        Laboratorio
+</li>
 
-                    </a>
+                </ul>
 
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link" href="colecciones.html">
-
-                        Colecciones
-
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link" href="equipo.html">
-
-                        Equipo
-
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link" href="investigacion.html">
-
-                        Investigación
-
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link" href="contacto.html">
-
-                        Contacto
-
-                    </a>
-
-                </li>
-
-            </ul>
+            </div>
 
         </div>
-
-    </div>
-
-</nav>
+    </nav>
 
 <header class="page-header">
 
@@ -135,7 +148,7 @@
 
         <p>
 
-            Historia, misión y servicios.
+            Historia, misión, servicios e instrumental disponible.
 
         </p>
 
@@ -151,7 +164,7 @@
 
             <div class="col-lg-6">
 
-                <img src="assets/img/laboratorio.jpg"
+                <img src="assets/img/lab2.png"
 
                     class="img-fluid rounded shadow"
 
@@ -331,6 +344,436 @@
             </div>
 
         </div>
+
+    </div>
+
+</section>
+
+<!-- INSTRUMENTAL DETALLADO -->
+
+<section class="bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+
+                Instrumental por Salón
+
+            </h2>
+
+            <p class="text-muted">
+
+                Detalle histórico del equipo óptico, fotográfico y de cómputo
+                distribuido en las instalaciones del laboratorio.
+
+            </p>
+
+        </div>
+
+        <!-- Microscopios -->
+
+        <div class="mb-5">
+
+            <h4><i class="bi bi-eyeglasses me-2"></i>Microscopios Petrográficos</h4>
+
+            <div class="table-responsive">
+
+                <table class="table table-striped align-middle">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th style="width:45%">Descripción</th>
+
+                            <th style="width:35%">Observaciones</th>
+
+                            <th style="width:20%">Imagen</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+
+                                LABORATORIO cuenta con un microscopio petrográfico marca Nikon con Software Enterprise Omnimet Beuhler de 1998, 
+                                un microscopio petrográfico marca Leica y uno Carl Zeiss Standard 25.
+
+                            </td>
+
+                            <td>
+
+                                El microscopio Nikon, se encuentra conectado a una cámara digital que envia las imágenes al monitor y procesador.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/microNikon.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Microscopio Nikon">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                SALÓN 114-A Cuenta con 16 microscopios petrográficos marca Carl Zeiss, modelos K-7 Pol y 9 microscopios marca Carl Zeiss modelo Standard 25.
+
+                            </td>
+
+                            <td>
+
+                                El microscopio Standard 25 se encuentra conectado a una cámara digital y a su vez a un monitor a color.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/microCarl.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Microscopio Carl Zeiss">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                SALÓN 114-B 14 microscopios petrográficos marca Leitz Wetzlar, modelo Laborlux II Pol y 3 microscopios petrográficos marca Leitz, modelo SM LUX Pol.
+
+                            </td>
+
+                            <td>
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/microLeitz.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Microscopio Leitz">
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- Cámaras -->
+
+        <div class="mb-5">
+
+            <h4><i class="bi bi-camera me-2"></i>Cámaras</h4>
+
+            <div class="table-responsive">
+
+                <table class="table table-striped align-middle">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th style="width:80%">Descripción</th>
+
+                            <th style="width:20%">Imagen</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+
+                                Cámara digital Sony CCD, adaptable a microscopio
+                                binocular.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/digitalSony.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Cámara CCD">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Cámara digital Sony CCD-IRIS, adaptable a microscopio
+                                monocular y utilizada como monitor de discusión.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/digitalSonyIris.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Cámara CCD Iris">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Adaptador de cámara Sony CMA-D2.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/ADAPTADOR.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Adaptador CMA-D2">
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <!-- Cómputo y video -->
+
+        <div>
+
+            <h4><i class="bi bi-display me-2"></i>Cómputo y Video</h4>
+
+            <div class="table-responsive">
+
+                <table class="table table-striped align-middle">
+
+                    <thead class="table-dark">
+
+                        <tr>
+
+                            <th style="width:45%">Descripción</th>
+
+                            <th style="width:35%">Observaciones</th>
+
+                            <th style="width:20%">Imagen</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+
+                                Videocasetera VHS.
+
+                            </td>
+
+                            <td>
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/videoVHS.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Videoproyector Sony">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Videoproyector SONY (DATA Projector) Modelo No. VPL-CS5, Serie No. 24878.
+
+                            </td>
+
+                            <td>
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/videoSONY.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Proyector de acetatos">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Contador digital de puntos.
+
+                            </td>
+
+                            <td>
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/CONTADOR.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Contador digital de puntos">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Dos equipos de cómputo Intel inside Pentium.
+
+                            </td>
+
+                            <td>
+
+                                Uno equipo se encuentra conectado a un monitor con usos de datos del laboratorio 114. 
+                                El otro CPU se encuentra conectado al monitor View sonic que a su vez contiene el software del Analizador de imágenes.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/PROCESADOR1.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Equipo de cómputo">
+
+                                <img src="assets/img/PROCESADOR2.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Equipo de cómputo">
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Proyector de acetatos ELMO.
+
+                            </td>
+
+                            <td>
+
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/ACETATOS.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Equipo de cómputo">
+
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Monitor SONY 20"
+
+                            </td>
+
+                            <td>
+
+                                Monitor de discusión.
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/monitorSONY.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Equipo de cómputo">
+
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+
+                                Televisor SONY 24"
+
+                            </td>
+
+                            <td>
+
+
+
+                            </td>
+
+                            <td>
+
+                                <img src="assets/img/TV.jpg"
+                                    class="img-fluid rounded"
+                                    alt="Equipo de cómputo">
+
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <p class="text-muted text-center mt-4 mb-0">
+
+            Para el inventario actual y su
+            estado operativo, consulta la sección <a href="#">Equipo</a>.
+
+        </p>
 
     </div>
 

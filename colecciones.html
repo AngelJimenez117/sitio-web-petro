@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Colecciones | Laboratorio de Petrología | FI UNAM</title>
+    <title>Laboratorio de Petrología | Facultad de Ingeniería | UNAM</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,40 +15,44 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body>
 
-    <!-- TOPBAR -->
-
+    <!-- Barra superior -->
     <div class="topbar">
-
-        <div class="container d-flex justify-content-between">
-
+        <div class="container d-flex justify-content-between align-items-center">
+            <span><img class="logounam" src="assets/img/unam.png"></span>
             <span>Universidad Nacional Autónoma de México</span>
-
             <span>Facultad de Ingeniería</span>
-
         </div>
-
     </div>
 
-    <!-- NAVBAR -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top">
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-unam sticky-top shadow">
         <div class="container">
+            
+            <a>
+                <img class="logopetro" src="assets/img/logo.png" alt="logo lab petrologia">
+            </a>
 
             <a class="navbar-brand fw-bold" href="index.html">
-
                 Laboratorio de Petrología
-
             </a>
 
             <button class="navbar-toggler"
+                type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbar">
 
@@ -61,7 +65,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link active" href="index.html">Inicio</a>
                     </li>
 
                     <li class="nav-item">
@@ -69,27 +73,65 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="colecciones.html">Colecciones</a>
+                        <a class="nav-link" href="colecciones.html">Colecciones</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="equipo.html">Equipo</a>
-                    </li>
+                    <li class="nav-item dropdown">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="investigacion.html">Investigación</a>
-                    </li>
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="papimeDropdown"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
+        Proyecto PAPIME
+
+    </a>
+
+    <ul class="dropdown-menu" aria-labelledby="papimeDropdown">
+
+        <li>
+            <a class="dropdown-item"
+               href="https://papimeingenieria.wixsite.com/rocas-sedimentarias"
+               target="_blank">
+                Sedimentos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://metamorficapapime.wixsite.com/rocasmetamorficas"
+               target="_blank">
+                Complejos Metamórficos
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://www.ingenieria.unam.mx/geologia3D/"
+               target="_blank">
+                Geología 3D
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item"
+               href="https://ingenieria-unam.netlify.app/#recorrido_virtual"
+               target="_blank">
+                Excursiones Mineralógicas
+            </a>
+        </li>
+
+    </ul>
+
+</li>
 
                 </ul>
 
             </div>
 
         </div>
-
     </nav>
 
     <!-- HEADER -->
@@ -111,7 +153,7 @@
 
     </header>
 
-    <!-- BUSCADOR -->
+    <!-- BUSCADOR 
 
     <section class="py-5">
 
@@ -143,7 +185,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!-- TARJETAS -->
 
@@ -306,13 +348,15 @@
 
                             <span class="badge bg-warning text-dark mb-3">
 
-                                Minerales
+                                Estructuras sedimentarias
+
 
                             </span>
 
                             <h4>
 
-                                Minerales
+                                Estructuras sedimentarias
+
 
                             </h4>
 
@@ -336,8 +380,10 @@
                     </div>
 
                 </div>
+                
+                <!--
 
-                <!-- Secciones -->
+                 Secciones 
 
                 <div class="col-lg-4 col-md-6 collection-item">
 
@@ -383,7 +429,7 @@
 
                 </div>
 
-                <!-- Colección Histórica -->
+                 Colección Histórica 
 
                 <div class="col-lg-4 col-md-6 collection-item">
 
@@ -434,6 +480,9 @@
         </div>
 
     </section>
+    -->
+
+    
 
     <!-- FOOTER -->
 
@@ -443,17 +492,73 @@
 
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-lg-4">
 
-                    Laboratorio de Petrología
+                    <h5>
+
+                        Laboratorio de Petrología
+
+                    </h5>
+
+                    <p>
+
+                        Facultad de Ingeniería
+
+                        <br>
+
+                        Universidad Nacional Autónoma de México
+
+                    </p>
 
                 </div>
 
-                <div class="col-md-6 text-md-end">
+                <div class="col-lg-4">
 
-                    Facultad de Ingeniería · UNAM
+                    <h5>
+
+                        Contacto
+
+                    </h5>
+
+                    <p>
+
+                        Ciudad Universitaria
+
+                        <br>
+
+                        Coyoacán, Ciudad de México
+
+                    </p>
 
                 </div>
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <h5>
+
+                        Horario
+
+                    </h5>
+
+                    <p>
+
+                        Lunes a Viernes
+
+                        <br>
+
+                        09:00 - 18:00
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+
+                Copyright © Facultad de Ingeniería UNAM 2026. Derechos Reservados.
 
             </div>
 
@@ -462,7 +567,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/js/main.js"></script>
 
     <script>
